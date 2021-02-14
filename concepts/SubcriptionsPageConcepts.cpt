@@ -1,0 +1,16 @@
+Created by testinium on 14.02.2021
+
+This is a concept file with following syntax for each concept.
+
+# Register to One Month(Monthly Plan with Two Week Free Trial) package
+
+* Find element by "MONTHLY_PLAN_TWO_WEEK_FREE_TEXT_CONTROL" if not exist show error message "Monthly plan tab not exist"
+* Find element by "YEARLY_PLAN_TWO_WEEK_FREE_TEXT_CONTROL" if not exist show error message "Yearly plan tab not exist"
+* Check page title text "Subscription"
+* Wait for "MONTHLY_SUBSCRIBE_BUTTON" and click
+* Write Logger -> "Register to One Month(Monthly Plan with Two Week Free Trial) package step completed"
+
+# Validate package price
+* Find element by "MONTHLY_PACKAGE_PRICE_CONTROL" if not exist show error message "Package price not correct"
+* Write Logger -> "Validate package price step completed"
+

@@ -1,0 +1,14 @@
+Created by testinium on 14.02.2021
+
+This is a concept file with following syntax for each concept.
+# Make Payment with Credit Card
+* "5" second wait
+* Find element by "PAYMENT_METHOD_PAGE_CONTROL" if not exist show error message "Payment method page not exist"
+* Find element by "MONTHLY_PRICE_PAYMENT_METHOD_PAGE_CONTROL" if not exist show error message "Payment method page monthly price not true"
+* Wait for "PAYMENT_METHOD_DROPDOWN" and click
+* Wait for "SELECT_PAYMENT_CREDIT_CARD" and click
+* Check page title text "Basket"
+* "2" second wait
+* Wait for "TERMS_CHECK_BOX" and click
+* Wait for "PAY_NOW_BUTTON" and click
+* Write Logger -> "Make Payment with Credit Card step completed"

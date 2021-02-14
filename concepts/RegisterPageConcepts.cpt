@@ -1,0 +1,14 @@
+Created by testinium on 14.02.2021
+
+This is a concept file with following syntax for each concept.
+# Fill Create Account form with a random email
+* "5" second wait
+* Find element by "CREATE_ACCOUNT_PAGE_CONTROL" if not exist show error message "Create account page not exist"
+* Write "TESTERNAME" to the "CREAT_ACCOUNT_FIRST_NAME_INPUT_AREA" and clear area
+* Write "TESTERLASTNAME" to the "CREAT_ACCOUNT_LAST_NAME_INPUT_AREA" and clear area
+* Check page title text "Register"
+* Write randomly email
+* Write "Test.Password2" to the "CREAT_ACCOUNT_PASSWORD_INPUT_AREA" and clear area
+* Wait for "OFFERS_CHECK_BUTTON" and click
+* Wait for "CREAT_ACCOUNT_BUTTON" and click
+* Write Logger -> "Fill Create Account form with a random email step completed"

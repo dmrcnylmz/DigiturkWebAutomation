@@ -1,4 +1,4 @@
-package step;
+package BaseStep;
 
 import Base.BaseMethods;
 import com.thoughtworks.gauge.Step;
@@ -7,15 +7,10 @@ import helper.StoreHelper;
 import model.ElementInfo;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.Random;
-import java.util.Set;
 
 public class StepImplementation extends BaseMethods {
 
@@ -117,37 +112,8 @@ public class StepImplementation extends BaseMethods {
 
     }
 
-    public String getSaltString() {
-        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        StringBuilder salt = new StringBuilder();
-        Random rnd = new Random();
-        while (salt.length() < 10) { // length of the random string.
-            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
-            salt.append(SALTCHARS.charAt(index));
-        }
-        String saltStr = salt.toString();
-        return saltStr;
 
-    }
-    @Step("Write randomly email")
-    public void mailGenerator()
-    {
-        String email= getSaltString()+"@gmail.com" ;
-        sendKeys(email,"CREAT_ACCOUNT_EMAIL_INPUT_AREA");
 
-    }
-    @Step("Selecth month")
-    public void selectMonth( ){
-        Select s = new Select(new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("Ecom_Payment_Card_ExpDate_Month"))));
-        s.selectByIndex(1);
-
-    }
-    @Step("Selecth year")
-    public void selectYear(){
-        Select s = new Select(new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("Ecom_Payment_Card_ExpDate_Year"))));
-        s.selectByIndex(2);
-
-    }
 
 
     @Step("Click with javascript <key>")
@@ -159,11 +125,5 @@ public class StepImplementation extends BaseMethods {
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();", element);
     }
-    @Step("Delete all cookies")
-    public void deleteAllCookies(){
 
-        Set<Cookie> allCookies = driver.manage().getCookies();
-        for (Cookie cookie : allCookies) {
-            driver.manage().deleteCookieNamed(cookie.getName());
-        }
-}}
+}

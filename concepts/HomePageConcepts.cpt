@@ -1,0 +1,8 @@
+Created by testinium on 14.02.2021
+
+This is a concept file with following syntax for each concept.
+# Click Subscribe button
+* Delete all cookies
+* Check page title text "Home - beIN SPORTS CONNECT"
+* Wait for "HOME_PAGE_SUBSCRIBE_TAB" and click
+* Write Logger -> "Click Subscribe button step completed"

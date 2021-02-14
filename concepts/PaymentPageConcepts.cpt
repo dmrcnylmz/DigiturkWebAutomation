@@ -1,0 +1,22 @@
+Created by testinium on 14.02.2021
+
+This is a concept file with following syntax for each concept.
+# Expect for a total charge of 1.00 since this is a free trial package
+* "4" second wait
+* Find element by "PAYMENT_PAGE_1_AUD_CONTROL" if not exist show error message "1 aud değeri sayfada görüntülenemedi"
+* Write Logger -> "Expect for a total charge of 1.00 since this is a free trial package step completed"
+
+# Provide a test card data and confirm payment(Do not enter a real card data)
+* Check page title text "Payment confirmation"
+* Write "TESTERNAME TESTERLASTNAME" to the "Payment_Card_Name_Input" and clear area
+* Write "5890040000000016" to the "Payment_Card_Number_Input" and clear area
+* Selecth month
+* Selecth year
+* Write "354" to the "Ecom_Payment_Card_Verification" and clear area
+* Wait for "PAYMENT_PAGE_PAY_BUTTON" and click
+* Write Logger -> "Provide a test card data and confirm payment(Do not enter a real card data) step completed"
+
+# Expect for a error text and finish test with success
+* Find element by "CARD_NUMBER_INCORRECT_CONTROL" if not exist show error message "Kart numarası hatalı mesajı görüntülenemedi."
+* "5" second wait
+* Write Logger -> "TEST COMPLETED"
