@@ -1,0 +1,142 @@
+[
+  {
+    "key": "HOME_PAGE_SUBSCRIBE_TAB",
+    "value": "Subscribe",
+    "type": "name"
+  },
+  {
+    "key": "MONTHLY_SUBSCRIBE_BUTTON",
+    "value": "(//a[@data-text='SUBSCRIBE'])[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "MONTHLY_PACKAGE_PRICE_CONTROL",
+    "value": "//span[.='AU$19.99']",
+    "type": "xpath"
+  },
+
+  {
+    "key": "CREAT_ACCOUNT_FIRST_NAME_INPUT_AREA",
+    "value": "//input[@placeholder='First Name']",
+    "type": "xpath"
+  },
+  {
+    "key": "CREAT_ACCOUNT_LAST_NAME_INPUT_AREA",
+    "value": "LastName",
+    "type": "name"
+  },
+  {
+    "key": "CREAT_ACCOUNT_EMAIL_INPUT_AREA",
+    "value": "EmailOrPhone",
+    "type": "name"
+  },
+  {
+    "key": "CREAT_ACCOUNT_PASSWORD_INPUT_AREA",
+    "value": "Password",
+    "type": "name"
+  },
+  {
+    "key": "OFFERS_CHECK_BUTTON",
+    "value": "//form[@id='form-register']/div//label",
+    "type": "xpath"
+  },
+
+  {
+    "key": "CREAT_ACCOUNT_BUTTON",
+    "value": "//input[@value='CREATE ACCOUNT']",
+    "type": "xpath"
+  },
+
+  {
+    "key": "PAYMENT_METHOD_DROPDOWN",
+    "value": "//span[@id='select2-drpPaymentMethod-container']",
+    "type": "xpath"
+  },
+
+
+  {
+    "key": "SELECT_PAYMENT_CREDIT_CARD",
+    "value": "//li[contains(text(),'Credit/Debit Card')]",
+    "type": "xpath"
+  },
+
+  {
+    "key": "TERMS_CHECK_BOX",
+    "value": ".custom-checkbox > label",
+    "type": "css"
+  },
+  {
+    "key": "PAY_NOW_BUTTON",
+    "value": "pay-now",
+    "type": "name"
+  },
+  {
+    "key": "Payment_Card_Name_Input",
+    "value": "Ecom_Payment_Card_Name",
+    "type": "id"
+  },
+  {
+    "key": "Payment_Card_Number_Input",
+    "value": "Ecom_Payment_Card_Number",
+    "type": "id"
+  },
+  {
+    "key": "Ecom_Payment_Card_ExpDate_Month",
+    "value": "Ecom_Payment_Card_ExpDate_Month",
+    "type": "id"
+  },
+  {
+    "key": "Ecom_Payment_Card_ExpDate_Year",
+    "value": "Ecom_Payment_Card_ExpDate_Year",
+    "type": "id"
+  },
+  {
+    "key": "Ecom_Payment_Card_Verification",
+    "value": "Ecom_Payment_Card_Verification",
+    "type": "id"
+  },
+
+  {
+    "key": "PAYMENT_PAGE_PAY_BUTTON",
+    "value": "payment",
+    "type": "name"
+  },
+
+  {
+    "key": "PAYMENT_PAGE_1_AUD_CONTROL",
+    "value": "//td/small[contains(text(),'1.00 AUD')]",
+    "type": "xpath"
+  },
+  {
+    "key": "CARD_NUMBER_INCORRECT_CONTROL",
+    "value": "//td[contains(text(),'Card number incorrect or incompatible')]",
+    "type": "xpath"
+  },
+  {
+    "key": "MONTHLY_PLAN_TWO_WEEK_FREE_TEXT_CONTROL",
+    "value": "//div[@class='subscription-package open']/span[.='Monthly Plan with Two Week Free Trial']",
+    "type": "xpath"
+  },
+  {
+    "key": "YEARLY_PLAN_TWO_WEEK_FREE_TEXT_CONTROL",
+    "value": "//div[@class='subscription-package open']/span[.='Yearly Plan with Two Week Free Trial']",
+    "type": "xpath"
+  },
+  {
+    "key": "CREATE_ACCOUNT_PAGE_CONTROL",
+    "value": "//h1[.='CREATE ACCOUNT']",
+    "type": "xpath"
+  },
+  {
+    "key": "PAYMENT_METHOD_PAGE_CONTROL",
+    "value": "//h1[.='PAYMENT METHOD']",
+    "type": "xpath"
+  },
+  {
+    "key": "MONTHLY_PRICE_PAYMENT_METHOD_PAGE_CONTROL",
+    "value": "//strong[.='Total Amount : AU$19.99']",
+    "type": "xpath"
+  }
+
+
+]
